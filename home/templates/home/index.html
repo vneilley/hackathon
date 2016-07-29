@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CountPatient</title>
+</head>
+<body>
+
+<form  action="{% url 'home.views.Result' %}" method="post">
+    {% csrf_token %}
+
+    <br>
+<br>
+
+     <label>High Temp</label>
+    <input type="text" name = "HighTemp">
+      <br>
+    <br>
+
+    <label>Low Temp</label>
+    <input type="text" name = "LowTemp">
+      <br>
+<br>
+
+     <label>Rain</label>
+    <input type="text" name = "Rain">
+      <br>
+    <br>
+
+    <label>Snow</label>
+    <input type="text" name = "Snow">
+      <br>
+    <br>
+
+    <input type="submit" name="CHECK">
+
+</form>
+</body>
+</html>
